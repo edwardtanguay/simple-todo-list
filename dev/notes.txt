@@ -1,2 +1,3 @@
 - x create an input box and button
-- .. program button to add a todo 
+- x program button to add a todo 
+- .. delete text after add

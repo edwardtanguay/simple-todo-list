@@ -9,6 +9,7 @@ function App() {
 		e.preventDefault();
 		todos.push(todo);
 		setTodos([...todos]);
+		setTodo('');
 	}
 
 	return (
