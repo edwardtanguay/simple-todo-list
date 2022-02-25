@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.scss';
 
-
 function App() {
 	const [todo, setTodo] = useState('');
 	const [todos, setTodos] = useState([]);
