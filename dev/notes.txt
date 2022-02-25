@@ -1,3 +1,7 @@
 - x create an input box and button
 - x program button to add a todo 
-- .. delete text after add
+- x delete text after add
+- x save in localstorage on add
+- .. load from localstorage on page load
+	- without useEffect
+	- with useEffect
