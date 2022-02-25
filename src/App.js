@@ -3,13 +3,17 @@ import './App.scss';
 
 function App() {
 	const [todo, setTodo] = useState('');
-	const [todos, setTodos] = useState(['get milk', 'do report']);
+	const [todos, setTodos] = useState([]);
+
+	const handleAddTodo = (e) => {
+		console.log('nnn');
+	}
 
 	return (
 		<div className="App">
-			<h1>Todo List ({todo})</h1>
+			<h1>Todo List</h1>
 			<div className="todoListArea">
-				<input type="text" onChange={(e) => setTodo(e.target.value)} value={todo} /> <button>Add Todo</button>
+				<input type="text" onChange={(e) => setTodo(e.target.value)} value={todo} /> <button onClick={(e) => handleAddTodo(e)}>Add Todo</button>
 				<hr />
 				<ul>
 					{todos.map((todo, i) => {
