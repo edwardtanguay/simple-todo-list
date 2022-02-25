@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import './App.scss';
 
+const _todos = JSON.parse(localStorage.getItem('simpleTodoList_todos'));
+
 function App() {
 	const [todo, setTodo] = useState('');
-	const [todos, setTodos] = useState([]);
+	const [todos, setTodos] = useState(_todos);
 
 	const handleAddTodo = (e) => {
 		e.preventDefault();
