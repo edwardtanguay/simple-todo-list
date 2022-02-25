@@ -3,5 +3,10 @@
 - x delete text after add
 - x save in localstorage on add
 - .. load from localstorage on page load
-	- without useEffect
-	- with useEffect
+	- x without useEffect
+	- x inside function
+	- x with useEffect
+	- .. bugfix: if no localstorage
+
+- don't save empty string
+- focus

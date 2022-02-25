@@ -1,11 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.scss';
 
-const _todos = JSON.parse(localStorage.getItem('simpleTodoList_todos'));
 
 function App() {
 	const [todo, setTodo] = useState('');
-	const [todos, setTodos] = useState(_todos);
+	const [todos, setTodos] = useState([]);
 
 	const handleAddTodo = (e) => {
 		e.preventDefault();
@@ -14,6 +13,11 @@ function App() {
 		setTodos([...todos]);
 		setTodo('');
 	}
+
+	useEffect(() => {
+		const _todos = JSON.parse(localStorage.getItem('simpleTodoList_todos'));
+		setTodos(_todos === null ? [] : _todos);
+	}, []);
 
 	return (
 		<div className="App">
