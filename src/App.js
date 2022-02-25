@@ -7,7 +7,8 @@ function App() {
 
 	const handleAddTodo = (e) => {
 		e.preventDefault();
-		console.log('nnn');
+		todos.push(todo);
+		setTodos([...todos]);
 	}
 
 	return (
