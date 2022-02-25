@@ -31,7 +31,7 @@ function App() {
 			<h1>Todo List</h1>
 			<div className="todoListArea">
 				<form>
-					<input type="text" onChange={(e) => setTodo(e.target.value)} value={todo} /> <button onClick={(e) => handleAddTodo(e)}>Add Todo</button>
+					<input autoFocus type="text" onChange={(e) => setTodo(e.target.value)} value={todo} /> <button onClick={(e) => handleAddTodo(e)}>Add Todo</button>
 					<button type="button" onClick={handleClearTodos}>Clear Todos</button>
 					<hr />
 					<ul>

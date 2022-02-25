@@ -8,5 +8,5 @@
 	- x with useEffect
 	- x bugfix: if no localstorage
 - x don't save empty string
-- .. clear button
-- focus
+- x clear button
+- .. focus
