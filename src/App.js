@@ -8,10 +8,12 @@ function App() {
 
 	const handleAddTodo = (e) => {
 		e.preventDefault();
-		todos.push(todo);
-		localStorage.setItem('simpleTodoList_todos', JSON.stringify(todos));
-		setTodos([...todos]);
-		setTodo('');
+		if (todo.trim() !== '') {
+			todos.push(todo);
+			localStorage.setItem('simpleTodoList_todos', JSON.stringify(todos));
+			setTodos([...todos]);
+			setTodo('');
+		}
 	}
 
 	useEffect(() => {

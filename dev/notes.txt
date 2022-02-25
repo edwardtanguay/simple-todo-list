@@ -6,7 +6,7 @@
 	- x without useEffect
 	- x inside function
 	- x with useEffect
-	- .. bugfix: if no localstorage
-
-- don't save empty string
+	- x bugfix: if no localstorage
+- .. don't save empty string
 - focus
+- clear button
