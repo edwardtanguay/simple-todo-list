@@ -16,6 +16,11 @@ function App() {
 		}
 	}
 
+	const handleClearTodos = () => {
+		setTodos([]);
+		localStorage.setItem('simpleTodoList_todos', JSON.stringify([]));
+	}
+
 	useEffect(() => {
 		const _todos = JSON.parse(localStorage.getItem('simpleTodoList_todos'));
 		setTodos(_todos === null ? [] : _todos);
@@ -27,6 +32,7 @@ function App() {
 			<div className="todoListArea">
 				<form>
 					<input type="text" onChange={(e) => setTodo(e.target.value)} value={todo} /> <button onClick={(e) => handleAddTodo(e)}>Add Todo</button>
+					<button type="button" onClick={handleClearTodos}>Clear Todos</button>
 					<hr />
 					<ul>
 						{todos.map((todo, i) => {

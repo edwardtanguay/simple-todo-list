@@ -7,6 +7,6 @@
 	- x inside function
 	- x with useEffect
 	- x bugfix: if no localstorage
-- .. don't save empty string
+- x don't save empty string
+- .. clear button
 - focus
-- clear button
