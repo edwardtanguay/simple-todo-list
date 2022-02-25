@@ -9,4 +9,5 @@
 	- x bugfix: if no localstorage
 - x don't save empty string
 - x clear button
-- .. focus
+- x focus
+- .. 
